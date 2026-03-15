@@ -1,0 +1,143 @@
+.form-page-dark {
+  padding-top: 180px;
+  background-color: var(--bg-main);
+  min-height: 100vh;
+  padding-bottom: 120px;
+}
+
+.form-flex-dark {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.form-sidebar-dark h2 {
+  font-size: 3.5rem;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.form-sidebar-dark p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+
+.benefit-grid-dark {
+  display: grid;
+  gap: 25px;
+}
+
+.benefit-dark {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.benefit-dark strong {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
+
+.benefit-dark span {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.form-main-dark {
+  padding: 60px;
+}
+
+.dark-form {
+  display: grid;
+  gap: 24px;
+}
+
+.form-row-dark {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.form-group-dark {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group-dark label {
+  font-weight: 700;
+  color: var(--text-main);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group-dark input, .form-group-dark select, .form-group-dark textarea {
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--text-main);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group-dark input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: var(--glow-primary);
+}
+
+.btn-full-dark {
+  width: 100%;
+  padding: 24px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.form-success-dark {
+  text-align: center;
+  padding: 40px;
+}
+
+.success-icon-dark {
+  margin-bottom: 30px;
+}
+
+.form-success-dark h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.form-success-dark p {
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+}
+
+.ref-dark {
+  background: rgba(6, 182, 212, 0.1);
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 100px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--primary);
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .form-flex-dark { grid-template-columns: 1fr; text-align: center; }
+  .form-sidebar-dark h2 { font-size: 2.8rem; }
+  .benefit-dark { justify-content: center; }
+  .form-main-dark { padding: 40px 20px; }
+}
+
+@media (max-width: 768px) {
+  .form-row-dark { grid-template-columns: 1fr; }
+}

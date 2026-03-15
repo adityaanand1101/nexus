@@ -1,0 +1,189 @@
+/* Nexus Cyber-Sec Footer Styles */
+
+.footer-dark {
+  background-color: var(--bg-main);
+  padding: 100px 0 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-dark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+}
+
+.footer-grid-dark {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.footer-brand-dark {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-logo-dark {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.footer-logo-dark svg {
+  color: var(--primary);
+  filter: drop-shadow(0 0 5px var(--primary));
+}
+
+.footer-brand-dark p {
+  color: var(--text-muted);
+  max-width: 320px;
+  line-height: 1.6;
+}
+
+.social-links-dark {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links-dark a {
+  width: 40px;
+  height: 40px;
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.social-links-dark a:hover {
+  background: var(--primary);
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: var(--glow-primary);
+}
+
+.footer-links-dark h3, 
+.footer-contact-dark h3 {
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.footer-links-dark h3::after,
+.footer-contact-dark h3::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--primary);
+}
+
+.footer-links-dark ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-links-dark ul li a {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-links-dark ul li a:hover {
+  color: var(--primary);
+  transform: translateX(8px);
+}
+
+.footer-contact-dark {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item-dark {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.contact-item-dark svg {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.footer-bottom-dark {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-bottom-dark p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.legal-links-dark {
+  display: flex;
+  gap: 30px;
+}
+
+.legal-links-dark a {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.legal-links-dark a:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 1024px) {
+  .footer-grid-dark {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-grid-dark {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom-dark {
+    flex-direction: column;
+    text-align: center;
+  }
+  .legal-links-dark {
+    justify-content: center;
+  }
+}

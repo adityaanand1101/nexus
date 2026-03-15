@@ -1,0 +1,117 @@
+.about-page-v2 {
+  padding-top: 140px;
+  background: var(--mesh-gradient);
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.about-hero-v2 {
+  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: 80px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  color: var(--white);
+}
+
+.about-hero-icon {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about-story-v2 {
+  padding: 100px 0;
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-story-image {
+  position: relative;
+}
+
+.about-story-image img {
+  width: 100%;
+  border-radius: 40px;
+  box-shadow: var(--shadow-lg);
+}
+
+.experience-box-v2 {
+  position: absolute;
+  bottom: 40px;
+  right: -30px;
+  background: var(--accent);
+  color: var(--white);
+  padding: 30px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(255, 107, 0, 0.3);
+}
+
+.experience-box-v2 strong {
+  display: block;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.mission-list-v2 {
+  display: grid;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.mission-item-v2 {
+  display: flex;
+  gap: 20px;
+}
+
+.mission-icon-v2 {
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 102, 255, 0.1);
+  color: var(--primary);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.values-grid-v2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.value-card-v2 {
+  text-align: center;
+  padding: 50px 30px;
+}
+
+.value-icon-v2 {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 992px) {
+  .about-hero-v2 {
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+  }
+  .about-hero-content h1 { font-size: 2.8rem; }
+  .about-story-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-story-image { order: -1; }
+  .experience-box-v2 { right: 50%; transform: translateX(50%); bottom: -20px; }
+}
